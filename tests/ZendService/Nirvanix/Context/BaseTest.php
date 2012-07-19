@@ -8,9 +8,9 @@
  * @package   Zend_Service
  */
 
-namespace ZendTest\Service\Nirvanix\Context;
+namespace ZendServiceTest\Nirvanix\Context;
 
-use ZendTest\Service\Nirvanix\FunctionalTestCase;
+use ZendServiceTest\Nirvanix\FunctionalTestCase;
 
 /**
  * @category   Zend

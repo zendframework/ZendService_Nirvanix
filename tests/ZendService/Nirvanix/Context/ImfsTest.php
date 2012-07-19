@@ -8,10 +8,10 @@
  * @package   Zend_Service
  */
 
-namespace ZendTest\Service\Nirvanix\Context;
+namespace ZendServiceTest\Nirvanix\Context;
 
-use Zend\Service\Nirvanix\Context\Imfs as ImfsContext;
-use ZendTest\Service\Nirvanix\FunctionalTestCase;
+use ZendService\Nirvanix\Context\Imfs as ImfsContext;
+use ZendServiceTest\Nirvanix\FunctionalTestCase;
 
 /**
  * @category   Zend
@@ -25,7 +25,7 @@ class ImfsTest extends FunctionalTestCase
     public function testInheritsFromNirvanixBase()
     {
         $imfs = new ImfsContext();
-        $this->assertInstanceOf('Zend\Service\Nirvanix\Context\Base', $imfs);
+        $this->assertInstanceOf('ZendService\Nirvanix\Context\Base', $imfs);
     }
 
     // putContents()

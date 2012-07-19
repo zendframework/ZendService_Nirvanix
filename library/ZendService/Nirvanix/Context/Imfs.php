@@ -8,10 +8,10 @@
  * @package   Zend_Service
  */
 
-namespace Zend\Service\Nirvanix\Context;
+namespace ZendService\Nirvanix\Context;
 
 use Zend\Http\Request as HttpRequest;
-use Zend\Service\Nirvanix\Response;
+use ZendService\Nirvanix\Response;
 
 /**
  * Namespace proxy with additional convenience methods for the IMFS namespace.

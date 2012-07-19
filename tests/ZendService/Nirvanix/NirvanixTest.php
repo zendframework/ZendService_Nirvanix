@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendTest\Service\Nirvanix;
+namespace ZendServiceTest\Nirvanix;
 
 /**
  * @category   Zend
@@ -24,13 +24,13 @@ class NirvanixTest extends FunctionalTestCase
     public function testFactoryReturnsBaseWhenNoSubclassAvailable()
     {
         $base = $this->nirvanix->getService('Foo');
-        $this->assertInstanceOf('Zend\Service\Nirvanix\Context\Base', $base);
+        $this->assertInstanceOf('ZendService\Nirvanix\Context\Base', $base);
     }
 
     public function testFactoryReturnsImfsSubclassForImfsNamespace()
     {
         $imfs = $this->nirvanix->getService('IMFS');
-        $this->assertInstanceOf('Zend\Service\Nirvanix\Context\Imfs', $imfs);
+        $this->assertInstanceOf('ZendService\Nirvanix\Context\Imfs', $imfs);
     }
 
     public function testFactoryPassesHttpClientInstanceWithOptions()

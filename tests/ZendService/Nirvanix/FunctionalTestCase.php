@@ -8,12 +8,12 @@
  * @package   Zend_Service
  */
 
-namespace ZendTest\Service\Nirvanix;
+namespace ZendServiceTest\Nirvanix;
 
 use PHPUnit_Framework_TestCase as TestCase;
 use Zend\Http\Client as HttpClient;
 use Zend\Http\Client\Adapter\Test as TestAdapter;
-use Zend\Service\Nirvanix\Nirvanix;
+use ZendService\Nirvanix\Nirvanix;
 
 /**
  * @category   Zend

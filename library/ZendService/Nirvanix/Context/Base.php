@@ -8,14 +8,14 @@
  * @package   Zend_Service
  */
 
-namespace Zend\Service\Nirvanix\Context;
+namespace ZendService\Nirvanix\Context;
 
 use Traversable;
 use Zend\Http\Client as HttpClient;
 use Zend\Http\Request as HttpRequest;
 use Zend\Http\Response as HttpResponse;
-use Zend\Service\Nirvanix\Exception;
-use Zend\Service\Nirvanix\Response;
+use ZendService\Nirvanix\Exception;
+use ZendService\Nirvanix\Response;
 use Zend\Stdlib\ArrayUtils;
 
 /**

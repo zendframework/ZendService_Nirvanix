@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace Zend\Service\Nirvanix;
+namespace ZendService\Nirvanix;
 
 use Traversable;
 use Zend\Http\Client as HttpClient;

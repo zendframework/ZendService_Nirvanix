@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace Zend\Service\Nirvanix\Exception;
+namespace ZendService\Nirvanix\Exception;
 
 /**
  * @category   Zend

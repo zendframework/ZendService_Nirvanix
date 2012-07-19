@@ -8,10 +8,10 @@
  * @package   Zend_Service
  */
 
-namespace ZendTest\Service\Nirvanix;
+namespace ZendServiceTest\Nirvanix;
 
 use PHPUnit_Framework_TestCase as TestCase;
-use Zend\Service\Nirvanix\Response;
+use ZendService\Nirvanix\Response;
 
 /**
  * @category   Zend
@@ -27,7 +27,7 @@ class ResponseTest extends TestCase
     public function testThrowsWhenInputStringIsNotXML()
     {
         $notXml = 'foo';
-        $this->setExpectedException('Zend\Service\Nirvanix\Exception\RuntimeException', 'XML could not be parsed');
+        $this->setExpectedException('ZendService\Nirvanix\Exception\RuntimeException', 'XML could not be parsed');
         $response = new Response($notXml);
     }
 
@@ -35,7 +35,7 @@ class ResponseTest extends TestCase
     {
         $xml = "<?xml version='1.0'?>
                   <foo></foo>";
-        $this->setExpectedException('Zend\Service\Nirvanix\Exception\DomainException', 'Expected XML element Response');
+        $this->setExpectedException('ZendService\Nirvanix\Exception\DomainException', 'Expected XML element Response');
         $response = new Response($xml);
     }
 
@@ -46,7 +46,7 @@ class ResponseTest extends TestCase
                     <ResponseCode>42</ResponseCode>
                     <ErrorMessage>foo</ErrorMessage>
                   </Response>";
-        $this->setExpectedException('Zend\Service\Nirvanix\Exception\DomainException', 'foo', 42);
+        $this->setExpectedException('ZendService\Nirvanix\Exception\DomainException', 'foo', 42);
         new Response($xml);
     }
 
