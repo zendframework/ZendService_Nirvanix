@@ -11,6 +11,7 @@
 namespace ZendService\Nirvanix;
 
 use SimpleXMLElement;
+use ZendXml\Security as XmlSecurity;
 
 /**
  * This class decorates a SimpleXMLElement parsed from a Nirvanix web service
@@ -40,7 +41,7 @@ class Response
      */
     public function __construct($xml)
     {
-        $this->sxml = @simplexml_load_string($xml);
+        $this->sxml = @XmlSecurity::scan($xml);
 
         if (! $this->sxml instanceof SimpleXMLElement) {
             throw new Exception\RuntimeException("XML could not be parsed from response: $xml");
